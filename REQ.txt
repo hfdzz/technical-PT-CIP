@@ -1,0 +1,26 @@
+Buatlah database dimana berisi Kumpulan tabel, yaitu tabel kategori berita, tabel berita, tabel artis, dan tabel penulis. Pastikan tiap tabel memilik relasinya masing-masing
+
+Buatlah model dari tabel-tabel yang terdapat pada database di atas(pastikan terdapat ORM dari model yang dibuat).
+
+Buatlah kontroler berita berisi fungsi yang dapat melakukan CRUD yang nantinya data tersebut akan tersimpan pada tabel berita, dengan menggunakan API.
+Gunakanlah autentikasi pada kontroler Ketika melakukan CRUD tersebut, dengan username dan password diambil dari tabel penulis yang memerlukan JWT (Json Web Token). 
+Buatlah Seeder untuk tabel penulis serta kategori, sehingga user tidak perlu menginput Kembali.
+
+Pada fungsi Read, usahakan menggunakan Redis.
+Note: Dikirim melalui repository github/gitlab
+
+Table:
+kategori_berita
+berita
+artis
+penulis
+
+CRUD:
+berita
+
+Auth:
+-CRUD bertia, username&pass (tabel "penulis") with JWT
+
+seeder: penulis, kategori
+
+Read: redis (cache?)
